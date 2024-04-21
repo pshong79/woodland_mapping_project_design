@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/stl_flag.ico">
+
+    <title>Woodland Mapping</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<!--      <a class="navbar-brand" href="index.html">Menu</a>-->
+      <a href="index.html">
+        <img src="images/site_logo.png" height="50px">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="parks.html">Parks<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Find a Park" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container">
+
+      <h3 class="header">Location 1</h3>
+      <div id="map"></div>
+      <script>
+        function initMap() {
+        var uluru = {lat: 38.600264, lng: -90.478777};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMbtz4ViQhQ6ONf2EFm6O2nMflGMg3ziY&callback=initMap">
+    </script>
+
+    <div class="link-format">
+      <a target="_blank" href="https://maps.app.goo.gl/WDayWwM5iaJ47g5KA">Address 1<br>Address 2<br>City, State 00000-0000</a>
+      
+    </div>
+
+    <p>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Collapsible Group Item #1</button>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              This group...Nam sed mollis turpis. Morbi feugiat, lorem nec lacinia congue, felis nunc consequat libero, in luctus odio lectus eget nulla. Nulla hendrerit orci eget blandit fermentum. Vestibulum vulputate ac ligula quis porta. Praesent in accumsan purus. Donec bibendum augue velit, ut iaculis nisi venenatis ut. Nunc vulputate magna lacus, nec cursus libero vestibulum sed. Vivamus rhoncus ac mi non placerat. Vivamus ultrices erat tristique purus rutrum, sit amet pharetra purus efficitur. Maecenas lacus purus, feugiat sit amet rhoncus lobortis, tincidunt ullamcorper augue.
+              <br><br>
+              <a target="_blank" href="files/document1.txt" class="list">Document 1</a>
+              <div class="doc-description">
+                <span><strong>Description: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur scelerisque eleifend. Etiam semper orci semper mi sodales pellentesque. Nullam ac ligula dolor. Etiam aliquet elementum elementum. Quisque aliquam purus et est fringilla, vitae vulputate velit viverra. Curabitur ut justo turpis. Aenean vel posuere velit. Vivamus vel justo quam. In hac habitasse platea dictumst. Proin consequat nibh mollis facilisis condimentum. Sed nibh tortor, placerat vel porta ut, tincidunt eget nibh. Praesent vestibulum urna nec nisi elementum tempus. Aenean eget metus odio.</span>
+              </div>
+              <br>
+              <div>
+              <a target="_blank" href="files/document2.txt" class="list">Document 2</a>
+                <div class="doc-description">
+                  <span><strong>Description: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur scelerisque eleifend. Etiam semper orci semper mi sodales pellentesque. Nullam ac ligula dolor. Etiam aliquet elementum elementum. Quisque aliquam purus et est fringilla, vitae vulputate velit viverra. Curabitur ut justo turpis. Aenean vel posuere velit. Vivamus vel justo quam. In hac habitasse platea dictumst. Proin consequat nibh mollis facilisis condimentum. Sed nibh tortor, placerat vel porta ut, tincidunt eget nibh. Praesent vestibulum urna nec nisi elementum tempus. Aenean eget metus odio.</span>
+                </div>
+              </div>
+
+                  <p>
+                    <div class="input-group mb-3">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile02">
+                        <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+                      </div>
+
+                      <div class="input-group-append">
+                        <span class="input-group-text" id="">Upload</span>
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Collapsible Group Item #2</button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              <br><br>
+              <a target="_blank" href="files/image1.png" class="list">Image 1</a>
+              <div class="doc-description">
+                <span><strong>Description: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur scelerisque eleifend. Etiam semper orci semper mi sodales pellentesque. Nullam ac ligula dolor. Etiam aliquet elementum elementum. Quisque aliquam purus et est fringilla, vitae vulputate velit viverra. Curabitur ut justo turpis. Aenean vel posuere velit. Vivamus vel justo quam. In hac habitasse platea dictumst. Proin consequat nibh mollis facilisis condimentum. Sed nibh tortor, placerat vel porta ut, tincidunt eget nibh. Praesent vestibulum urna nec nisi elementum tempus. Aenean eget metus odio.</span>
+              </div>
+
+              <p>
+                <div class="input-group mb-3">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                    <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+                  </div>
+
+                  <div class="input-group-append">
+                    <span class="input-group-text" id="">Upload</span>
+                  </div>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Collapsible Group Item #3</button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+              <p>
+              <div class="input-group mb-3">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="inputGroupFile02">
+                  <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+                </div>
+
+                <div class="input-group-append">
+                  <span class="input-group-text" id="">Upload</span>
+                </div>
+              </div>
+            </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+    </main>
+    <footer class="footer">
+      <p>&copy; Design created: 2018</p>
+    </footer>
+
+    <!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="bootstrap-4.0.0/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
+    <script src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
